@@ -52,6 +52,48 @@ module.exports = {
 }
 ```
 
+Update zoomable images manually in your components:
+
+```js
+// SomeComponent.vue
+export default {
+  methods: {
+    updateImages () {
+      // do something to update images in this page
+      this.$nextTick(() => {
+        // update zooming immediately
+        this.$vuepress.zooming.update() // with default selector
+        this.$vuepress.zooming.update('.new-images') // with custom selector
+
+        // update zooming with delay
+        this.$vuepress.zooming.updateDelay() // with default selector and delay
+        this.$vuepress.zooming.updateDelay('.new-images') // with custom selector and default delay
+        this.$vuepress.zooming.updateDelay('.new-images', 1000) // with custom selector and delay
+      })
+    },
+  },
+}
+```
+
+Get the `Zooming` instance directly in your components:
+
+> See the [docs of zooming](https://desmonding.me/zooming/docs/#/api-reference) for all available methods.
+
+```js
+// SomeComponent.vue
+export default {
+  methods: {
+    updateImages () {
+      // get the Zooming instance
+      const zooming = this.$vuepress.zooming
+
+      // call the methods
+      zooming.open(img)
+    },
+  },
+}
+```
+
 ## LICENSE
 
-MIT
+MIT &copy; [@meteorlxy](https://github.com/meteorlxy)
