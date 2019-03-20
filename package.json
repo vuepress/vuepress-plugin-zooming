@@ -1,0 +1,56 @@
+{
+  "name": "vuepress-plugin-zooming",
+  "version": "0.0.0",
+  "description": "zooming plugin for VuePress",
+  "main": "lib/index.js",
+  "author": "meteorlxy <meteor.lxy@foxmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "vuepress",
+    "plugin",
+    "zooming",
+    "image",
+    "zoom"
+  ],
+  "homepage": "https://github.com/meteorlxy/vuepress-plugin-zooming",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meteorlxy/vuepress-plugin-zooming.git"
+  },
+  "bugs": {
+    "url": "https://github.com/meteorlxy/vuepress-plugin-zooming/issues"
+  },
+  "scripts": {
+    "dev": "vuepress dev dev --temp .temp",
+    "build": "vuepress build dev --dest .build --temp .temp",
+    "lint": "eslint --fix --ext .js,.vue ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "zooming": "^2.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "husky": "^1.1.3",
+    "lint-staged": "^8.0.4",
+    "vuepress": "^1.0.0-alpha.44"
+  },
+  "peerDependencies": {
+    "vuepress": "^1.0.0-alpha.44"
+  }
+}
