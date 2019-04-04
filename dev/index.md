@@ -1,1 +1,1 @@
-![npm](https://img.shields.io/npm/v/vuepress-plugin-zooming.svg)
+![Vuepress](https://vuepress.vuejs.org/hero.png)
