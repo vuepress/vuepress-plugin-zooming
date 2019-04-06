@@ -1,6 +1,15 @@
 module.exports = {
   plugins: [
-    require('../../lib'),
+    [require('../../lib'), {
+      selector: '.content img',
+
+      options: {
+        bgColor: 'black',
+        zIndex: 10000,
+      },
+
+      delay: 1000,
+    }],
   ],
 
   themeConfig: {
