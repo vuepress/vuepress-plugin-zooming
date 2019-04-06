@@ -9,6 +9,8 @@ This plugin will make your images zoomable in your VuePress site.
 
 ## Usage
 
+### Basic
+
 Install via NPM:
 
 ```sh
@@ -52,6 +54,8 @@ module.exports = {
 }
 ```
 
+### Advanced
+
 Update zoomable images manually in your components:
 
 ```js
@@ -83,9 +87,9 @@ Get the `Zooming` instance directly in your components:
 // SomeComponent.vue
 export default {
   methods: {
-    updateImages () {
+    openImages () {
       // get the Zooming instance
-      const zooming = this.$vuepress.zooming
+      const zooming = this.$vuepress.zooming.instance
 
       // call the methods
       zooming.open(img)
