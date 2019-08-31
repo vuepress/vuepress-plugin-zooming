@@ -1,7 +1,7 @@
 module.exports = {
   plugins: [
     [require('../../lib'), {
-      selector: '.content img',
+      selector: '.theme-default-content img',
 
       options: {
         bgColor: 'black',
