@@ -1,5 +1,7 @@
 # vuepress-plugin-zooming
 
+> Migrated to [vuepress-community](https://github.com/vuepress/vuepress-community)
+
 [![npm](https://img.shields.io/npm/v/vuepress-plugin-zooming.svg)](https://www.npmjs.com/package/vuepress-plugin-zooming)
 [![GitHub](https://img.shields.io/github/license/vuepress/vuepress-plugin-zooming.svg)](https://github.com/vuepress/vuepress-plugin-zooming/blob/master/LICENSE)
 
